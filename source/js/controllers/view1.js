@@ -2,6 +2,8 @@
 
 myApp.controller('view1Ctrl', function($scope, $filter) {
 
-	console.log("view1Ctrl loaded");
+	var s = Snap("#svg");
+
+	var bigCircle = s.circle(150, 150, 100);
 
 });
