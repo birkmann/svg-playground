@@ -1,9 +1,11 @@
 'use strict';
 
-myApp.controller('view2Ctrl', function($scope, $filter) {
+myApp.controller('view3Ctrl', function($scope, $filter) {
 
-	var paper = Snap("#svg2");
+	var paper = Snap("#svg3");
+
 	var circle = paper.circle(10,10,10);
+	
 	var states = [{
 	    fill: '#bada55',
 	    cx: 10,

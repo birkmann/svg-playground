@@ -1,3 +1,26 @@
 nav {
 	display: block;
 }
+
+.nav-main {
+	margin: 0 0 50px;
+	ul {
+		@include clearfix;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			float: left;
+			a {
+				display: block;
+				padding: 5px 10px;
+				text-decoration: none;
+				color: #202020;
+				&:hover {
+					background: #202020;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
