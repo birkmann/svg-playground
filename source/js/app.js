@@ -16,33 +16,33 @@ myApp.config(function ($routeProvider) {
     })
     .when('/view3', {
         templateUrl:'/templates/view3.html',
-        controller: 'view2Ctrl'
+        controller: 'view3Ctrl'
     })
     .when('/view4', {
         templateUrl:'/templates/view4.html',
-        controller: 'view2Ctrl'
+        controller: 'view4Ctrl'
     })
     .when('/view5', {
         templateUrl:'/templates/view5.html',
-        controller: 'view2Ctrl'
+        controller: 'view5Ctrl'
     })
     .when('/view6', {
         templateUrl:'/templates/view6.html',
-        controller: 'view2Ctrl'
+        controller: 'view6Ctrl'
     })
     .when('/view7', {
         templateUrl:'/templates/view7.html',
-        controller: 'view2Ctrl'
+        controller: 'view7Ctrl'
     })
     .when('/view8', {
         templateUrl:'/templates/view8.html',
-        controller: 'view2Ctrl'
+        controller: 'view8Ctrl'
     })
     .when('/view9', {
         templateUrl:'/templates/view9.html',
-        controller: 'view2Ctrl'
+        controller: 'view9Ctrl'
     })
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/view1'
     });
 });

@@ -35,8 +35,8 @@ myApp.controller('view1Ctrl', function($scope, $filter) {
 	  });
 	};
 	 
-	// Recall blink method once every 3 seconds
+	// Recall blink method once every 2 second
 	 
-	setInterval(blink, 3000);
+	setInterval(blink, 2000);
 
 });

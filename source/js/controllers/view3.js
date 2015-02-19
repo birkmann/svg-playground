@@ -2,29 +2,20 @@
 
 myApp.controller('view3Ctrl', function($scope, $filter) {
 
-	var paper = Snap("#svg3");
-
-	var circle = paper.circle(10,10,10);
+	var s = Snap("#svg3");
+	var smallCircle = s.circle(100, 150, 70);
 	
-	var states = [{
-	    fill: '#bada55',
-	    cx: 10,
-	    cy: 10
-	}, {
-	    fill: '#55bada',
-	    cx: 100
-	}, {
-	    fill: '#ba55da',
-	    cy: 100
-	}, {
-	    fill: '#000000',
-	    cx: 10
-	}];
+	//animation
+	function animateSVG(){
+	    smallCircle.animate({cy: 300}, 5000,mina.bounce);
+	    smallCircle.animate({fill:"red"},200);
+	}
 	
-	(function animateCircle(el, i) {
-	    el.animate(states[i], 1000, function() {
-	        animateCircle(el, ++i in states ? i : 0);
-	    })
-	})(circle, 0);
+	//reset function?
+	function resetSVG(){
+	    // something here to reset SVG??
+	}
+	
+	smallCircle.mouseover(animateSVG,resetSVG);
 
 });
