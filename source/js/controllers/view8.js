@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 myApp.controller('view8Ctrl', function($scope, $filter) {
 
@@ -112,6 +112,9 @@ myApp.controller('view8Ctrl', function($scope, $filter) {
 			this.face.transform("t" + [point.x, point.y] + "s.6");
 		}
 	};
+
+	// var dotGroup = '';
+	// var i = 0;
 	
 	this.state = 0;
 	this.dots = [];
