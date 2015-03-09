@@ -42,6 +42,10 @@ myApp.config(function ($routeProvider) {
         templateUrl:'/templates/view9.html',
         controller: 'view9Ctrl'
     })
+    .when('/view10', {
+        templateUrl:'/templates/view10.html',
+        controller: 'view10Ctrl'
+    })
     .otherwise({
         redirectTo: '/view1'
     });
